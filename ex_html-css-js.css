@@ -1,9 +1,12 @@
 body {
    background-color: beige;
+   width: 800px;
+   /* centrar */
+}
+
+p {
    color: black;
    font-family: Arial, sans-serif;
-   width: 800px;
-   text-align: center;
 }
 
 h1 {
@@ -21,7 +24,7 @@ h2 {
 
 img {
    width: 100%;
-   text-align: center;
+   /* centrar */
    border-radius: 5px;
    margin-bottom: 15px;
 
@@ -53,4 +56,5 @@ input {
 
 .instruccionesAdicionales {
    color: #5f5e5e;
+   /* placeholder gris */
 }
