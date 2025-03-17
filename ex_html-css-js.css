@@ -58,3 +58,7 @@ input {
    color: #5f5e5e;
    /* placeholder gris */
 }
+
+.cambiarModo {
+   background-color: black;
+}

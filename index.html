@@ -6,39 +6,49 @@
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
 <body>
+    <button id="cambiarModo">Modo claro/oscuro</button>
     <h1>Realiza tu pedido</h1>
+
     <img src="cheese-burger.png">
-    <form>
+
+    <form id="form">
         <h2>Datos del cliente:</h2>
-            <p>Nombre: <label><input type="text" required></label></p>
+            <p>Nombre: <input type="text" id="nombre" required></p>
             <p>Apellidos: <input type="text" required></p>
-            <p>Direccion: <input type="text" minlength="15" required></p>
-            <p>Direccion: <input type="text" minlength="9" maxlength="9" required></p>
-            <p>Email: <input type="text" required></p>
+            <p>Direccion: <input type="text" id="direccion" minlength="15" required></p>
+            <p>Telefono: <input type="text" minlength="9" maxlength="9" id="telefono" required></p>
+            <p>Email: <input type="text" id="email" required></p>
             <p>Hora: <input type="time" required></p>
+
         <h2>Pedido de hamburguesa:</h2>
             <p><b>Tipo de hamburguesa:</b>
-                <br><input type="radio" name="tipo" required> Clásica
-                <br><input type="radio" name="tipo" required> BBQ
-                <br><input type="radio" name="tipo" required> Especial
+                <br><input type="radio" name="tipo" id="clasica" required> Clásica
+                <br><input type="radio" name="tipo" id="bbq" required> BBQ
+                <br><input type="radio" name="tipo" id="especial" required> Especial
             </p>
             <p><b>Ingredientes extra:</b>
-                <br><input type="checkbox" name="ingredientes"> Bacon
-                <br><input type="checkbox" name="ingredientes"> Queso
-                <br><input type="checkbox" name="ingredientes"> Huevo
-                <br><input type="checkbox" name="ingredientes"> Patatas
+                <br><input type="checkbox" id="ingrediente1" name="ingredientes"> Bacon
+                <br><input type="checkbox" id="ingrediente2" name="ingredientes"> Queso
+                <br><input type="checkbox" id="ingrediente3" name="ingredientes"> Huevo
+                <br><input type="checkbox" id="ingrediente4" name="ingredientes"> Patatas
             </p>
-            <p><b>Cantidad: </b><input type="number" min="1" max="5"></p>
+            <p><b>Cantidad: </b><input type="number" min="1" max="5" id="cantidad"></p>
+
+            <div id="mensajePrecio"></div>
+
         <h2>Método de pago:</h2>
             <p><input type="radio" name="pago" required> Efectivo
             <input type="radio" name="pago" required> Tarjeta
             <input type="radio" name="pago" required> Paypal
         </p>
+
         <h2>Instrucciones adicionales:</h2>
-        <p><input type="text" maxlength="100" placeholder="Masa fina, sin gluten..."></p>
-        <button class="enviarPedido" type="submit">Enviar Pedido</button>
+        <p><input type="text" maxlength="100" placeholder="Masa fina, sin gluten..." id="instruccionesAdicionales"></p>
+        <p>Caracteres: <span id="contador">0</span></p>
+        <button class="enviarPedido" type="submit" id="enviarPedido">Enviar Pedido</button>
     </form>
     <br>
+
     <footer>Cristhian Arroyo Guillen</footer>
     <script src="ex_html-css-js.js"></script>
 </body>
