@@ -1,12 +1,9 @@
-html {
-   width: 800px;
-   text-align: center;
-}
-
 body {
    background-color: beige;
    color: black;
    font-family: Arial, sans-serif;
+   width: 800px;
+   float: center;
 }
 
 h1 {
@@ -39,13 +36,14 @@ form {
 }
 
 input {
-   border: #eaeaea;
+   border-color: #eaeaeaea;
+   border-width: 1px;
    border-radius: 5px;
    padding: 8px;
    margin-bottom: 15px;
 }
 
-button .enviarPedido{
+.enviarPedido{
    background-color: #a4161a;
    color: white;
    text-align: center;
@@ -53,3 +51,6 @@ button .enviarPedido{
    padding: 10px;
 }
 
+.instruccionesAdicionales {
+   color: #5f5e5e;
+}
