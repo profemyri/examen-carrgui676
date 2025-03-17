@@ -3,7 +3,7 @@ body {
    color: black;
    font-family: Arial, sans-serif;
    width: 800px;
-   float: center;
+   text-align: center;
 }
 
 h1 {
