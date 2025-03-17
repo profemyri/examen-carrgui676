@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Realiza tu pedido</h1>
-    <img src="cheese-burger.png">
+    <img src="cheese-burger.png" >
     <form>
         <h3>Datos del cliente:</h3>
             <p>Nombre: <input type="text" required></p>
@@ -28,12 +28,14 @@
                 <br><input type="checkbox" name="ingredientes"> Huevo
                 <br><input type="checkbox" name="ingredientes"> Patatas
             </p>
-            <p><b>Cantidad: </b><input type="text"></p>
+            <p><b>Cantidad: </b><input type="number" min="1" max="5"></p>
         <h3>Método de pago:</h3>
             <p><input type="radio" name="pago" required> Efectivo
             <input type="radio" name="pago" required> Tarjeta
             <input type="radio" name="pago" required> Paypal
         </p>
+        <h3>Instrucciones adicionales:</h3>
+        <p><input type="text" maxlength="100"></p>
         <input type="submit" placeholder="Enviar Pedido">
     </form>
     <br>
