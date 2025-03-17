@@ -1,12 +1,16 @@
 // Validación del formulario antes de enviar.
 document.getElementById ("form").onsubmit = function (event) {
     if (document.getElementById("nombre").value.trim()===""){
+        event.preventDefault();
         alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
     } else if (document.getElementById("direccion").value.length < 15){
+        event.preventDefault();
         alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
     } else if (document.getElementById("telefono").value.length != 9){
+        event.preventDefault();
         alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
     } else if (!document.getElementById("email").value.includes ("@")){
+        event.preventDefault();
         alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
     }
 };
@@ -18,7 +22,7 @@ document.getElementById ("form").onsubmit = function (event){
         alert ("Se ha confirmado y enviado el pedido.");
         alert ("¡Gracias por tu pedido "+document.getElementById("nombre").value.trim()+"!")
     } else {
-        event.defaultPrevented();
+        event.preventDefault();
         alert ("Se ha cancelado el pedido.");
     }
 };
