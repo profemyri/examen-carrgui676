@@ -1,7 +1,7 @@
 body {
    background-color: beige;
    width: 800px;
-   /* centrar */
+   margin-left: 250px;
 }
 
 p {
@@ -24,7 +24,6 @@ h2 {
 
 img {
    width: 100%;
-   /* centrar */
    border-radius: 5px;
    margin-bottom: 15px;
 
@@ -56,7 +55,6 @@ input {
 
 .instruccionesAdicionales {
    color: #5f5e5e;
-   /* placeholder gris */
 }
 
 .cambiarModo {

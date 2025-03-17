@@ -1,8 +1,12 @@
 // Validación del formulario antes de enviar.
-/ document.getElementById ("form").onsubmit = function (event) {
-    if (document.getElementById ("nombre").value.trim() === "" || !document.getElementById("email").value.includes("@")
-    || document.getElementById ("direccion").value < 15 || document.getElementById ("telefono") != 9){
-        event.preventDefault();
+document.getElementById ("form").onsubmit = function (event) {
+    if (document.getElementById("nombre").value.trim()===""){
+        alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
+    } else if (document.getElementById("direccion").value.length < 15){
+        alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
+    } else if (document.getElementById("telefono").value.length != 9){
+        alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
+    } else if (!document.getElementById("email").value.includes ("@")){
         alert ("Revisa el formulario: algunos campos son incorrectos o están incompletos.");
     }
 };
@@ -48,7 +52,7 @@ if (document.getElementById("ingrediente1").checked) {
 
 total *= document.getElementById ("cantidad").value;
 document.getElementById ("mensajePrecio").textContent = "Precio total del pedido: "+total+"€";
-};
+});
 
 // Contador caracteres Instrucciones adicionales.
 document.getElementById ("instruccionesAdicionales").oninput = function (){
@@ -58,6 +62,7 @@ document.getElementById ("instruccionesAdicionales").oninput = function (){
 
 // Extra Modo claro/oscuro.
 document.getElementById ("cambiarModo").onclick = function () {
+    document.getElementById ("enviarPedido").textContent = "Modo claro";
     document.body.classList.toggle ("cambiarModo");
 };
 
