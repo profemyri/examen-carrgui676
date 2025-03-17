@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Realiza tu pedido</h1>
-    <img src="cheese-burger.png" >
+    <img src="cheese-burger.png">
     <form>
         <h2>Datos del cliente:</h2>
-            <p>Nombre: <input type="text" required></p>
+            <p>Nombre: <label><input type="text" required></label></p>
             <p>Apellidos: <input type="text" required></p>
             <p>Direccion: <input type="text" minlength="15" required></p>
             <p>Direccion: <input type="text" minlength="9" maxlength="9" required></p>
@@ -36,7 +36,7 @@
         </p>
         <h2>Instrucciones adicionales:</h2>
         <p><input type="text" maxlength="100"></p>
-        <input type="submit" placeholder="Enviar Pedido">
+        <button class="enviarPedido" type="submit">Enviar Pedido</button>
     </form>
     <br>
     <footer>Cristhian Arroyo Guillen</footer>
