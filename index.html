@@ -2,13 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-   ..........
+    <title>Formulario_hamburguesa</title>
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
 <body>
-   ..........
-
+    <h1>Realiza tu pedido</h1>
+    <img src="cheese-burger.png">
+    <form>
+        <h3>Datos del cliente:</h3>
+            <p>Nombre: <input type="text" required></p>
+            <p>Apellidos: <input type="text" required></p>
+            <p>Direccion: <input type="text" minlength="15" required></p>
+            <p>Direccion: <input type="text" minlength="9" maxlength="9" required></p>
+            <p>Email: <input type="text" required></p>
+            <p>Hora: <input type="time" required></p>
+        <h3>Pedido de hamburguesa:</h3>
+            <p><b>Tipo de hamburguesa:</b>
+                <br><input type="radio" name="tipo" required> Clásica
+                <br><input type="radio" name="tipo" required> BBQ
+                <br><input type="radio" name="tipo" required> Especial
+            </p>
+            <p><b>Ingredientes extra:</b>
+                <br><input type="checkbox" name="ingredientes"> Bacon
+                <br><input type="checkbox" name="ingredientes"> Queso
+                <br><input type="checkbox" name="ingredientes"> Huevo
+                <br><input type="checkbox" name="ingredientes"> Patatas
+            </p>
+            <p><b>Cantidad: </b><input type="text"></p>
+        <h3>Método de pago:</h3>
+            <p><input type="radio" name="pago" required> Efectivo
+            <input type="radio" name="pago" required> Tarjeta
+            <input type="radio" name="pago" required> Paypal
+        </p>
+        <input type="submit" placeholder="Enviar Pedido">
+    </form>
+    <br>
+    <footer>Cristhian Arroyo Guillen</footer>
     <script src="ex_html-css-js.js"></script>
-
 </body>
 </html>
